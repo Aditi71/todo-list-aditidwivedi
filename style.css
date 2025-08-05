@@ -1,0 +1,138 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+  }
+  
+  /* Container */
+  .todo-container {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .todo-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title */
+  .todo-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  /* Input group */
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .input-group input[type="text"],
+  .input-group input[type="date"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  .input-group input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  #add-task-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #add-task-btn:hover {
+    background: #2980b9;
+  }
+  
+  /* Task list */
+  #task-list {
+    list-style: none;
+  }
+  
+  #task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f9fc;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all 0.2s;
+  }
+  
+  #task-list li:hover {
+    background: #eaf2f8;
+  }
+  
+  #task-list li.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  /* Task text */
+  #task-list li span {
+    cursor: pointer;
+    flex-grow: 1;
+    transition: color 0.2s;
+  }
+  
+  /* Delete button */
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .input-group {
+      flex-direction: column;
+    }
+  
+    #add-task-btn {
+      width: 100%;
+    }
+  }
+  
