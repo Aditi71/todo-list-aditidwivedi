@@ -67,5 +67,5 @@ This view demonstrates the responsiveness of the To-Do App on Android devices.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/todo-list-app.git
+git clone https://github.com/Aditi71/todo-list-aditidwivedi.git
 cd todo-list-app
